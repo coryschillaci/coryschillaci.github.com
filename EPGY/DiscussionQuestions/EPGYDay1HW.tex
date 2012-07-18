@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+
+
+%AMS-TeX packages
+\usepackage{amssymb,amsmath,amsthm} 
+
+%geometry (sets margin) and other useful packages
+\usepackage[margin=1.25in]{geometry}
+\usepackage{graphicx,ctable,booktabs}
+\usepackage{multicol}
+\usepackage[parfill]{parskip} %skip line rather than indent for new paragraph
+
+\usepackage{enumerate}
+\usepackage[colorlinks,pdftex]{hyperref}
+
+
+%
+%Redefining sections as problems
+%
+\makeatletter
+\newenvironment{problem}{\@startsection
+       {section}
+       {1}
+       {-.2em}
+       {-3.5ex plus -1ex minus -.2ex}
+       {2.3ex plus .2ex}
+       {\pagebreak[3]%forces pagebreak when space is small; use \eject for better results
+       \large\bf\noindent{Question }
+       }
+       }
+       {%\vspace{1ex}\begin{center} \rule{0.3\linewidth}{.3pt}\end{center}}
+       %\begin{center}\small\bf \ldots\ldots\ldots\end{center}
+       }
+\makeatother
+
+
+%
+%Fancy-header package to modify header/page numbering 
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\addtolength{\headwidth}{\marginparsep} %these change header-rule width
+%\addtolength{\headwidth}{\marginparwidth}
+\lhead{Question \thesection}
+\chead{} 
+\rhead{\thepage} 
+\lfoot{\small\scshape Frontiers of Physics} 
+\cfoot{} 
+\rfoot{\footnotesize EPGY Summer Institutes 2011} 
+\renewcommand{\headrulewidth}{.3pt} 
+\renewcommand{\footrulewidth}{.3pt}
+\setlength\voffset{-0.25in}
+\setlength\textheight{648pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+%Contents of problem set
+%    
+\begin{document}
+
+\title{\Large\textbf{Homework I: Areas of Physics, Units, Scales, and Philosophy}} 
+\author{\normalsize Cory Schillaci}
+\date{\small July 12, 2011} 	
+
+\maketitle
+
+\thispagestyle{empty}
+
+You should read Chapters 1 and 3 of Weinberg's \emph{Dreams of a Final Theory} before the second afternoon section. You'll have a chance to discuss the ideas from the reading today and tomorrow, but feel free to bring any physics questions to class tomorrow.
+
+\begin{problem}{Size scales}
+\begin{enumerate}[a)]
+\item Make a chart showing various things you have learned about in the past, either at school or on your own. Organize this chart by size and give the size of each approximately using orders of magnitude. How does the smallest thing on your chart compare to the smallest things that physicists are interested in? Make a similar comparison for the largest.
+\item Come up with a few reasons why physicists often consider orders of magnitude to be more important than precise numbers.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}{Dimensional analysis practice}
+Use dimensional analysis to estimate how long it takes a bowling ball to fall from the top of a building to the ground below. You must figure out which quantities are pertinent to the problem, and how to combine them make something with the units of time.
+\textbf{Hint:} The appropriate property of gravity to consider on Earth is $g=9.8\text{m}/\text{s}^2$.
+\end{problem}
+
+\begin{problem}{Planck units}
+The natural units described in the notes are one possible choice of units, in that case primarily motivated by simplification of equations. Another choice are the so-called \emph{Planck units}. Using the following fundamental physical constants, derive the simplest possible quantities with the units of energy and length. Give the numerical values of these quantities, called the \emph{Planck energy} and \emph{Planck time}, in SI units. Why do you think physicists consider these quantities to be interesting?
+
+\begin{center}\begin{tabular}{c c c}
+Name of Constant & Symbol & Value in SI Units \\\hline
+Gravitational Constant & $G$ & $6.67\cdot10^{-11} \text{m}^3\text{kg}^{-1}\text{s}^{-2}$ \\
+Speed of Light in Vacuum & $c$ & $3.00\cdot10^8 \text{m}\:\text{s}^{-1}$ \\ 
+Dirac Constant & $\hbar$ & $1.05\cdot10^{-34}$J$\cdot$s  \\
+Boltzmann Constant & $k_B$ & $1.38\cdot10^{-23}$J/K \\
+\end{tabular}\end{center}
+\end{problem}
+
+\begin{problem}{Restoring constants}
+Although particle physicists typically use natural units and suppress factors of $c$ and $\hbar$, it's easy enough to restore them in final expressions should they be needed. Restore the units in the following expressions:
+
+\begin{enumerate}[a)]
+
+\item $E=NT$, where T is the temperature and N is a number of particles.
+\item $E=\sqrt{m^2+p^2}$, where $m$ is a mass and $p$ is a momentum. 
+
+\end{enumerate}
+
+\end{problem}
+
+
+\begin{problem}{What makes a theory good?}
+Come up with a set of criteria which a physical theory should satisfy to be satisfactory. Do this for both a ``fundamental" theory (one which seeks to describe how the universe works from the bottom up) and an ``effective" theory, which describes something at a larger scale (like Newtonian mechanics).
+\end{problem}
+
+\begin{problem}{Areas of physics}
+
+Select one of the fields of physics described in Section 1 of today's notes. Briefly describe in your own words what physicists working on that topic study and list a few of the important problems they are working to solve. Why do you think this is an interesting or uninteresting are of physics?
+
+\end{problem}
+
+\end{document}
