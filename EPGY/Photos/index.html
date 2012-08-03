@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Photos</title>
+
+<style type="text/css">
+body {
+background: #222;
+margin-top: 20px;
+}
+
+h3 {
+color: #eee;
+font-family: Verdana;
+}
+
+.thumbnails img {
+height: 80px;
+border: 4px solid #555;
+padding: 1px;
+margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+border: 4px solid #00ccff;
+cursor:pointer;
+}
+
+.preview img {
+border: 4px solid #444;
+padding: 1px;
+height: 500px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="gallery" align="center">
+<h3>Frontiers of Physics 2012</h3><br/>
+
+<div class="thumbnails">
+	<img onmouseover="preview.src=img1.src" id="img1" src="./MaliasPhoto.jpg" alt="Image Not Loaded"/>
+</div><br/>
+
+<div class="preview" align="center">
+	<img id="preview" src="./MaliasPhoto.jpg" alt="No Image Loaded"/>
+</div>
+
+<br/>
+
+</div>
+</body>
+</html>
